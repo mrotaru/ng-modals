@@ -1,0 +1,6 @@
+<div ng-if="currentModal() == name" class="update-form-inner" ng-class="{active: currentModal()==name}">
+	<a href="javascript:;" class="fa fa-times close-update-form" ng-click="cancel()"></a>
+	<h3>{{message}}</h3>
+	<button ng-click="confirm()">Confirm</button>
+	<button ng-click="cancel()">Cancel</button>
+</div>
