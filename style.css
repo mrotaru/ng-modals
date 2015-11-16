@@ -1,0 +1,12 @@
+.xmodal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    margin-top: -100px;
+    z-index: 10; /* keep on top of other elements on the page */
+    outline: 9999px solid rgba(0,0,0,0.5);
+    
+    max-width: 400px;
+}

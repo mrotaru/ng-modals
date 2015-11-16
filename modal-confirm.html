@@ -1,6 +1,12 @@
-<div ng-if="currentModal() == name" class="update-form-inner" ng-class="{active: currentModal()==name}">
-	<a href="javascript:;" class="fa fa-times close-update-form" ng-click="cancel()"></a>
-	<h3>{{message}}</h3>
-	<button ng-click="confirm()">Confirm</button>
-	<button ng-click="cancel()">Cancel</button>
+<div ng-if="currentModal() == name" class="xmodal panel panel-default panel-primary">
+  <div class="panel-heading">
+    Modal Title
+  	<a style="float: right; color: white" href="javascript:;" class="fa fa-times" ng-click="cancel()"></a>
+  </div>
+  <div class="panel-body">
+  	{{message}}
+  	<hr/>
+  	<button ng-click="confirm()">Confirm</button>
+  	<button ng-click="cancel()">Cancel</button>
+  </div>
 </div>
